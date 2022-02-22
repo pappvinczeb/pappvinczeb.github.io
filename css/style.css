@@ -15,12 +15,15 @@
 
 html{
     font-family: "Roboto";
+    color: grey;
+    max-width: 1000px;
 }
 
 h1 {
     font-family: "Elite";
     color: rgb(116, 41, 41);
     font-size: 50px;
+    text-align: center;
 }
 
 h2{
@@ -28,4 +31,34 @@ h2{
     color: rgba(47, 189, 47, 0.719);
     font-size: 40px;
     line-height: 15px;
+    text-align: center;
 }
+
+.salesImg {
+    height: 200px;
+    position: relative;
+    left: 50px;
+}
+
+.salesContent{
+    border:solid 1px black;
+    background-color: rgba(255, 255, 0, 0.4);
+    font-weight: 600;
+    min-width: 1000px;
+    text-align: center;
+    box-shadow: 3px 3px 20px;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.topMenu{
+    font-family: "Elite";
+    font-size: 48px;
+    min-width: 400px;
+    text-align: center;
+    color: rgb(255, 255, 0);
+    border:solid 2px black;
+    border-radius: 25px;
+    background-color: rgba(116, 41, 41, 0.35);
+}
+
