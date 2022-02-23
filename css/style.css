@@ -1,3 +1,5 @@
+
+/*Importált betűtípusok*/
 @font-face {
     font-family: "Marck";
     src: url(/css/fonts/Marck_Script/MarckScript-Regular.ttf);
@@ -13,28 +15,77 @@
     src: url(/css/fonts/Roboto/Roboto-Regular.ttf);
 }
 
+/*Általános kiterjedő konfig */
+body{
+    --bs-body-bg: none;
+    margin: 0px;
+    --bs-body-line-height: none;
+}
+
 html{
     font-family: "Roboto";
     color: grey;
     max-width: 1200px;
-    background-color: rgba(255, 255, 0, 0.2);;
+    background-color: rgba(255, 255, 0, 0.2);
 }
 
-h1 {
+.title h1 {
     font-family: "Elite";
     color: rgb(116, 41, 41);
     font-size: 50px;
     text-align: center;
     margin: 60px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 h2{
     font-family: "Marck";
     color: rgba(47, 189, 47, 0.719);
-    font-size: 40px;
-    line-height: 15px;
+
 }
 
+/*Felső menü konfig*/
+.topMenu{
+    font-family: "Elite";
+    font-size: 48px;
+    text-align: center;
+    border:solid 2px black;
+    border-radius: 25px;
+    padding: 15px;
+    display: block;
+}
+
+.topMenuTd{
+    width: 25%;
+    text-align: center;
+}
+
+.topMenuTable a:link{
+    color: rgb(255, 255, 0);
+    background-color: rgb(116, 41, 41);
+    text-decoration: none;
+}
+
+.topMenuTable a:visited {
+    color: rgb(255, 255, 0);
+    background-color: rgb(116, 41, 41);
+    text-decoration: none;
+}
+
+.topMenuTable a:hover {
+    color: rgb(116, 41, 41);
+    background-color:  rgb(255, 255, 0);
+}
+
+.topMenu:hover{
+    background-color:  rgb(255, 255, 0);
+ }
+
+/*Sales (Akciók) konfig*/
 .salesImg {
     width: 70%;
     margin-left: 50px ;
@@ -54,49 +105,19 @@ h2{
     min-width: 60%;
 }
 
-.topMenu{
-    font-family: "Elite";
-    font-size: 48px;
+
+.salesContentData h2{
     text-align: center;
-    border:solid 2px black;
-    border-radius: 25px;
+    font-size: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    margin: 15px;
     padding: 15px;
-    display: block;
-}
-
-.topMenuTd{
-    min-width: 360px;
-    text-align: center;
 }
 
 
-a:link{
-    color: rgb(255, 255, 0);
-    background-color: rgb(116, 41, 41);
-    text-decoration: none;
-}
 
-a:visited {
-    color: rgb(255, 255, 0);
-    background-color: rgb(116, 41, 41);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(116, 41, 41);
-    background-color:  rgb(255, 255, 0);
-}
-
-.topMenu:hover{
-    background-color:  rgb(255, 255, 0);
- }
-
-
-.salesH2{
-    text-align: center;
-}
-
-
+/*Menu (Étlap) konfig*/
 
 .oneRow{
     background-color: rgba(255, 255, 0, 0.5);
@@ -110,33 +131,28 @@ a:hover {
 
 
 .price{
-    text-align: center;
+    text-align: right;
 }
 
 
 .menuTable table{
-    min-width: 1100px;
-    margin: 0;
+    min-width: 1150px;
+    margin: 10px;
     border: none;
     padding: 0;
     border-spacing: 0;
 }
 
-.menuTable h2{
-    margin: 20px 5px;
-}
 
-.menuTable img{
-    height: 50px;
-}
+
 
 .menuTable th{
     border-bottom: solid 1px black;
     font-weight: bold;
     font-size: 20px;
-    margin: 0;
+    margin: 200px 0 0 0;
     border: solid 0px;
-    padding: 0;
+    padding: 0 0 0 50%;
 }
 
 .menuTable td{
@@ -148,4 +164,70 @@ a:hover {
     margin: 0;
     border: solid 0px ;
     padding: 0;
+    font-family: "Roboto";
+}
+
+.menuContent h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menuContent img{
+    width: 50px;
+}
+
+/*Contact (Elérhetüőségek) konfig*/
+
+.contactContent h2{
+    font-size: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    margin: 15px;
+    padding: 15px;
+}
+
+/*Order (Rendelés) konfig*/
+.orderForm{
+    background-color:rgba(47, 189, 47, 0.719) ;
+    box-shadow: 3px 3px 20px;
+    margin: 1%;
+    border-radius: 10px;
+    font-family: "Roboto";
+}
+
+.orderForm legend{
+    text-align: center;
+    font-weight: bold;
+}
+
+.orderUserData label{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 10px ;
+}
+
+.productTitle{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 10px ;
+}
+
+.orderButton{
+    margin: auto;
+    width: 20%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: large;
+}
+
+.orderPrice{
+    text-align: center;
+    margin: 25px 0px;
+    font-size: x-large;
+    font-weight: bold;
+    
 }
