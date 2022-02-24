@@ -1,25 +1,36 @@
-function calcAmont() {
-    let price = 1200;
+//Validálja a megadott mennyiséget és kiszámolja a rendelés a végső árát
+function calcAmount(pricePerProduct, quantityNum) {
+    let sauceInput = document.querySelector("select[name='sauce']");
     let extraInput = document.querySelector("input[name='extra']:checked");
-    let quantityInput = document.querySelector("input.quantity");
-    let sauceInput = document.querySelector("select[name='sauce']")
-    let showAmount = document.querySelector("span.showAmount");
-    let amount = 0;
-    let quantityNum = parseInt(quantityInput.value);
+
+    amount = (pricePerProduct + parseInt(extraInput.value) + parseInt(sauceInput.value)) * quantityNum;
+
+    if (quantityNum > 10 || quantityNum < 1 || isNaN(quantityNum)) {
+        alert("A megadott menniység nem megfelelő, a darabszámnak 1 és 10 közé kell esnie.");
+        amount=0;
+    } else if (amount <= 5000) {
+        amount = amount + 500;
+    }
+    return amount;
+}
+
+//Validálja a formon bevitt Név mező értékét
+function validateFormUserName() {
     let nameInputValue = document.querySelector("input[name='name']").value.trim();
-    let emailInputValue = document.querySelector("input[name='email']").value.trim();
-    let addressInputValue = document.querySelector("input[name='address']").value.trim();
-    let commentInputValue = document.querySelector("textarea[name='comment']").value.trim();
 
     if (nameInputValue.length <= 0) {
         alert("A Név megadása kötelező!");
         return;
-    }
-
-    if (nameInputValue.indexOf(" ")<= 0) {
+    } else if (nameInputValue.indexOf(" ") <= 0) {
         alert("Kérem adja meg a teljes nevét (Vezetéknékv + Keresztnév)!");
         return;
     }
+
+}
+
+//Validálja a formon bevitt Email mező értékét
+function validateFormUserEmail() {
+    let emailInputValue = document.querySelector("input[name='email']").value.trim();
 
     if (emailInputValue.length <= 0) {
         alert("A Email cím megadása kötelező!");
@@ -28,6 +39,11 @@ function calcAmont() {
         alert("A Email cím formátuma nem megfelelő!");
         return;
     }
+}
+
+//Validálja a formon bevitt Szállítási cím mező értékét
+function validateFormUserAddress() {
+    let addressInputValue = document.querySelector("input[name='address']").value.trim();
 
     if (addressInputValue.length <= 0) {
         alert("A Szállítási cím megadása kötelező!");
@@ -36,17 +52,30 @@ function calcAmont() {
         alert("A Szállítási cím formátuma nem megfelelő!");
         return;
     }
+}
+
+//Validálja a formon bevitt Megjegyzés mező értékét
+function validateFormUserComment() {
+    let commentInputValue = document.querySelector("textarea[name='comment']").value.trim();
 
     if (commentInputValue.indexOf(">") >= 0 || commentInputValue.indexOf("<") >= 0 || commentInputValue.indexOf("#") >= 0) {
         alert("A megjegyzés nem tartalmazhat bizonyos speciális karaktereket (<, >, #)!")
         return;
     }
+}
 
-    if (quantityNum > 10 || quantityNum < 1 || isNaN(quantityNum)) {
-        alert("A megadott menniység nem megfelelő, a darabszámnak 1 és 10 közé kell esnie.");
-    } else {
-        amount = (price + parseInt(extraInput.value) + parseInt(sauceInput.value)) * quantityNum;
-    }
 
+//Lefuttatja a validációkat és kiírja a felületre a végső árat
+function showSumPrice() {
+    let price = 1200;
+    let showAmount = document.querySelector("span.showAmount");
+    let quantityNum = parseInt(document.querySelector("input.quantity").value);
+
+    validateFormUserName()
+    validateFormUserEmail()
+    validateFormUserAddress()
+    validateFormUserComment()
+    calcAmount(price, quantityNum)
     showAmount.innerHTML = amount;
+
 }
