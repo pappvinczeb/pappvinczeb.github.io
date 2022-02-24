@@ -1,4 +1,3 @@
-
 /*Importált betűtípusok*/
 @font-face {
     font-family: "Marck";
@@ -16,13 +15,13 @@
 }
 
 /*Általános kiterjedő konfig */
-body{
+body {
     --bs-body-bg: none;
     margin: 0px;
     --bs-body-line-height: none;
 }
 
-html{
+html {
     font-family: "Roboto";
     color: grey;
     max-width: 1200px;
@@ -42,29 +41,29 @@ html{
     line-height: 1.2;
 }
 
-h2{
+h2 {
     font-family: "Marck";
     color: rgba(47, 189, 47, 0.719);
 
 }
 
 /*Felső menü konfig*/
-.topMenu{
+.topMenu {
     font-family: "Elite";
     font-size: 48px;
     text-align: center;
-    border:solid 2px black;
+    border: solid 2px black;
     border-radius: 25px;
     padding: 15px;
     display: block;
 }
 
-.topMenuTd{
+.topMenuTd {
     width: 25%;
     text-align: center;
 }
 
-.topMenuTable a:link{
+.topMenuTable a:link {
     color: rgb(255, 255, 0);
     background-color: rgb(116, 41, 41);
     text-decoration: none;
@@ -78,22 +77,22 @@ h2{
 
 .topMenuTable a:hover {
     color: rgb(116, 41, 41);
-    background-color:  rgb(255, 255, 0);
+    background-color: rgb(255, 255, 0);
 }
 
-.topMenu:hover{
-    background-color:  rgb(255, 255, 0);
- }
+.topMenu:hover {
+    background-color: rgb(255, 255, 0);
+}
 
 /*Sales (Akciók) konfig*/
 .salesImg {
     width: 70%;
-    margin-left: 50px ;
+    margin-left: 50px;
 
 }
 
-.salesContent{
-    border:solid 1px black;
+.salesContent {
+    border: solid 1px black;
     background-color: rgba(255, 255, 0, 0.4);
     font-weight: 600;
     width: 680px;
@@ -106,7 +105,7 @@ h2{
 }
 
 
-.salesContentData h2{
+.salesContentData h2 {
     text-align: center;
     font-size: 40px;
     line-height: 15px;
@@ -119,23 +118,23 @@ h2{
 
 /*Menu (Étlap) konfig*/
 
-.oneRow{
+.oneRow {
     background-color: rgba(255, 255, 0, 0.5);
 }
 
-.twoRow{
+.twoRow {
     background-color: rgba(47, 189, 47, 0.5);
     padding: 0px;
     font: bold;
 }
 
 
-.price{
+.price {
     text-align: right;
 }
 
 
-.menuTable table{
+.menuTable table {
     min-width: 1150px;
     margin: 10px;
     border: none;
@@ -146,7 +145,7 @@ h2{
 
 
 
-.menuTable th{
+.menuTable th {
     border-bottom: solid 1px black;
     font-weight: bold;
     font-size: 20px;
@@ -155,19 +154,19 @@ h2{
     padding: 0 0 0 50%;
 }
 
-.menuTable td{
+.menuTable td {
     padding: 0;
     border-bottom: dotted 1px black;
     font-weight: bold;
     font-size: 24;
     font-size: 20px;
     margin: 0;
-    border: solid 0px ;
+    border: solid 0px;
     padding: 0;
     font-family: "Roboto";
 }
 
-.menuContent h2{
+.menuContent h2 {
     text-align: center;
     font-size: 40px;
     line-height: 15px;
@@ -176,13 +175,13 @@ h2{
     padding: 15px;
 }
 
-.menuContent img{
+.menuContent img {
     width: 50px;
 }
 
 /*Contact (Elérhetüőségek) konfig*/
 
-.contactContent h2{
+.contactContent h2 {
     font-size: 40px;
     line-height: 15px;
     font-weight: bold;
@@ -191,32 +190,32 @@ h2{
 }
 
 /*Order (Rendelés) konfig*/
-.orderForm{
-    background-color:rgba(47, 189, 47, 0.719) ;
+.orderForm {
+    background-color: rgba(47, 189, 47, 0.719);
     box-shadow: 3px 3px 20px;
     margin: 1%;
     border-radius: 10px;
     font-family: "Roboto";
 }
 
-.orderForm legend{
+.orderForm legend {
     text-align: center;
     font-weight: bold;
 }
 
-.orderUserData label{
+.orderUserData label {
     font-weight: bold;
     font-size: large;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
-.productTitle{
+.productTitle {
     font-weight: bold;
     font-size: large;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
-.orderButton{
+.orderButton {
     margin: auto;
     width: 20%;
     margin-top: 25px;
@@ -224,10 +223,10 @@ h2{
     font-size: large;
 }
 
-.orderPrice{
+.orderPrice {
     text-align: center;
     margin: 25px 0px;
     font-size: x-large;
     font-weight: bold;
-    
+
 }

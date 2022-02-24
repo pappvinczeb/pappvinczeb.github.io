@@ -82,30 +82,28 @@
                         <label class="form-label productTitle" for="sauce">Szósz:</label>
                         <select class="form-control" name="sauce" id="sauce">
                             <option value="0">Hagyományos</option>
-                            <option value="0">Csípős (+100 Ft)</option>
+                            <option value="100">Csípős (+100 Ft)</option>
                         </select>
                     </div>
                     <div>
-                        <label class="form-label productTitle" for="quantity">Menniység:</label>
-                        <input class="form-control" type="number" name="quantity" id="quantity" min="1" max="10">
+                        <label class="form-label productTitle" for="quantity">Menniység (minimum 1, maximum 10 darab):</label>
+                        <input class="form-control quantity" type="number" name="quantity" id="quantity" min="1" max="10">
                     </div>
                 </fieldset>
             </form>
             <div class="orderPrice">
-                Végösszeg: <span>1200</span> Ft
+                Végösszeg: <span class="showAmount">0</span> Ft
             </div>
             <div class="orderButton">
 
-                <button type="button" class="btn btn-success">Rendelés leadása</button>
+                <button onclick="calcAmont()" type="button" class="btn btn-success">Rendelés leadása</button>
             </div>
 
         </div>
-
+        <script src="/js/main.js"></script>
         <div class="col-2">
         </div>
     </div>
-
-
 </body>
 
 </html>
