@@ -12,7 +12,7 @@
 
 <body onload="getWeatherAndSale()">
     <div class="weatherWidget">
-          <div class="row">
+        <div class="row">
             <div class="weatherForm col-4">
                 <form>
                     <label class="form-label" for="days">Kérem válassza ki a látogatás napját:</label>
@@ -26,12 +26,13 @@
                         <option value="sunday">Vasárnap</option>
                     </select>
                     <div class="weatherButtonDiv">
-                        <button onclick="getWeatherAndSale()" type="button" class="btn btn-warning weatherButton">Mutat</button>
+                        <button onclick="getWeatherAndSale()" type="button"
+                            class="btn btn-warning weatherButton">Mutat</button>
                     </div>
                 </form>
             </div>
             <div class="weatherFormSale col-6">
-                <label class="form-label"><span class="weatherSale"></span></label>
+                <span class="weatherSale"></span>
             </div>
             <div class="weatherFormDayWeaher col-2">
                 <label class="form-label"><span class="weather"></span> °C</label>

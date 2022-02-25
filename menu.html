@@ -13,31 +13,32 @@
 <body onload="getWeatherAndSale()">
     <div class="weatherWidget">
         <div class="row">
-          <div class="weatherForm col-4">
-              <form>
-                  <label class="form-label" for="days">Kérem válassza ki a látogatás napját:</label>
-                  <select class="form-control daySelect" name="days" id="days">
-                      <option value="monday">Hétfő</option>
-                      <option value="tuesday">Kedd</option>
-                      <option value="wednesday">Szerda</option>
-                      <option value="thursday">Csütörtök</option>
-                      <option value="friday">Péntek</option>
-                      <option value="saturday">Szombat</option>
-                      <option value="sunday">Vasárnap</option>
-                  </select>
-                  <div class="weatherButtonDiv">
-                      <button onclick="getWeatherAndSale()" type="button" class="btn btn-warning weatherButton">Mutat</button>
-                  </div>
-              </form>
-          </div>
-          <div class="weatherFormSale col-6">
-              <label class="form-label"><span class="weatherSale"></span></label>
-          </div>
-          <div class="weatherFormDayWeaher col-2">
-              <label class="form-label"><span class="weather"></span> °C</label>
-          </div>
-      </div>
-  </div>
+            <div class="weatherForm col-4">
+                <form>
+                    <label class="form-label" for="days">Kérem válassza ki a látogatás napját:</label>
+                    <select class="form-control daySelect" name="days" id="days">
+                        <option value="monday">Hétfő</option>
+                        <option value="tuesday">Kedd</option>
+                        <option value="wednesday">Szerda</option>
+                        <option value="thursday">Csütörtök</option>
+                        <option value="friday">Péntek</option>
+                        <option value="saturday">Szombat</option>
+                        <option value="sunday">Vasárnap</option>
+                    </select>
+                    <div class="weatherButtonDiv">
+                        <button onclick="getWeatherAndSale()" type="button"
+                            class="btn btn-warning weatherButton">Mutat</button>
+                    </div>
+                </form>
+            </div>
+            <div class="weatherFormSale col-6">
+                <span class="weatherSale"></span>
+            </div>
+            <div class="weatherFormDayWeaher col-2">
+                <label class="form-label"><span class="weather"></span> °C</label>
+            </div>
+        </div>
+    </div>
     <table class="topMenuTable">
         <tr>
             <td class="topMenuTd"><a class="topMenu" href="contact.html">Elérhetőség</a></td>
@@ -50,129 +51,129 @@
         <h1>Étlap</h1>
     </div>
     <div class="menuContent">
-    <div class="menuTable">
-        <h2>Szendvicsek</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th><img src="/img/burger.jpg" alt="burger"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="oneRow">
-                    <td>Hamburger</td>
-                    <td class="menuTd price">1 090 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Sajtburger</td>
-                    <td class="menuTd price">1 190 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>BBQ burger</td>
-                    <td class="menuTd price">1 390 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Hawaii burger</td>
-                    <td class="menuTd price">1 390 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Chilis burger</td>
-                    <td class="menuTd price">1 390 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Füstös burger</td>
-                    <td class="menuTd price">1 390 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Csirke burger</td>
-                    <td class="menuTd price">1 390 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Lazac burger</td>
-                    <td class="menuTd price">1 690 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Óriás hamburger</td>
-                    <td class="menuTd price">1 990 Ft</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2>Köretek</h2>
-        <table class="menuTable">
-            <thead>
-                <tr>
-                    <th><img src="/img/fires.jpg" alt="fries"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="oneRow">
-                    <td>Hasábburgonya </td>
-                    <td class="menuTd price">390 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Steak burgonya</td>
-                    <td class="menuTd price">590 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Sült hagymakarika</td>
-                    <td class="menuTd price">590 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Csavart burgonya</td>
-                    <td class="menuTd price">690 Ft</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2>Italok</h2>
-        <table class="menuTable">
+        <div class="menuTable">
+            <h2>Szendvicsek</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="/img/burger.jpg" alt="burger"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="oneRow">
+                        <td>Hamburger</td>
+                        <td class="menuTd price">1 090 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Sajtburger</td>
+                        <td class="menuTd price">1 190 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>BBQ burger</td>
+                        <td class="menuTd price">1 390 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Hawaii burger</td>
+                        <td class="menuTd price">1 390 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Chilis burger</td>
+                        <td class="menuTd price">1 390 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Füstös burger</td>
+                        <td class="menuTd price">1 390 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Csirke burger</td>
+                        <td class="menuTd price">1 390 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Lazac burger</td>
+                        <td class="menuTd price">1 690 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Óriás hamburger</td>
+                        <td class="menuTd price">1 990 Ft</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Köretek</h2>
+            <table class="menuTable">
+                <thead>
+                    <tr>
+                        <th><img src="/img/fires.jpg" alt="fries"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="oneRow">
+                        <td>Hasábburgonya </td>
+                        <td class="menuTd price">390 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Steak burgonya</td>
+                        <td class="menuTd price">590 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Sült hagymakarika</td>
+                        <td class="menuTd price">590 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Csavart burgonya</td>
+                        <td class="menuTd price">690 Ft</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Italok</h2>
+            <table class="menuTable">
 
-            <thead>
-                <tr>
-                    <th><img src="/img/drink.jpg" alt="drink"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="oneRow">
-                    <td>Szénsavas üdítőitalok (0,5 l)</td>
-                    <td class="menuTd price">350 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Jeges tea (0,5 l)</td>
-                    <td class="menuTd price">350 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Ásványvíz (0,5 l)</td>
-                    <td class="menuTd price">290 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Házi világos sör (0,3 l)</td>
-                    <td class="menuTd price">490 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Házi világos sör (0,5 l)</td>
-                    <td class="menuTd price">690 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Házi barna sör (0,3 l)</td>
-                    <td class="menuTd price">590 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Házi barna sör (0,5 l)</td>
-                    <td class="menuTd price">890 Ft</td>
-                </tr>
-                <tr class="twoRow">
-                    <td>Házi mézsör (0,3 l)</td>
-                    <td class="menuTd price">790 Ft</td>
-                </tr>
-                <tr class="oneRow">
-                    <td>Házi mézsör (0,5 l)</td>
-                    <td class="menuTd price">1 090 Ft</td>
-                </tr>
-            </tbody>
-        </table>
+                <thead>
+                    <tr>
+                        <th><img src="/img/drink.jpg" alt="drink"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="oneRow">
+                        <td>Szénsavas üdítőitalok (0,5 l)</td>
+                        <td class="menuTd price">350 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Jeges tea (0,5 l)</td>
+                        <td class="menuTd price">350 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Ásványvíz (0,5 l)</td>
+                        <td class="menuTd price">290 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Házi világos sör (0,3 l)</td>
+                        <td class="menuTd price">490 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Házi világos sör (0,5 l)</td>
+                        <td class="menuTd price">690 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Házi barna sör (0,3 l)</td>
+                        <td class="menuTd price">590 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Házi barna sör (0,5 l)</td>
+                        <td class="menuTd price">890 Ft</td>
+                    </tr>
+                    <tr class="twoRow">
+                        <td>Házi mézsör (0,3 l)</td>
+                        <td class="menuTd price">790 Ft</td>
+                    </tr>
+                    <tr class="oneRow">
+                        <td>Házi mézsör (0,5 l)</td>
+                        <td class="menuTd price">1 090 Ft</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
-<script src="/js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

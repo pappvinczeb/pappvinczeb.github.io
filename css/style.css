@@ -248,8 +248,9 @@ h2 {
     color: rgb(255, 255, 0);
 }
 
-.weatherForm label{
+.weatherWidget label{
     color: rgb(255, 255, 0);
+    margin: 2%
 }
 
 .weatherWidget{
@@ -260,6 +261,8 @@ h2 {
     text-align: center;
     max-height: 10%;
     padding: 1.5%;
+    min-width: 99%;
+
 }
 
 .weatherFormDayWeaher{
@@ -268,7 +271,7 @@ h2 {
     color: rgb(255, 255, 0);
 }
 
-.weatherFormSale{
+.weatherSale{
     text-align: center;
     color: rgba(47, 189, 47, 1);
     font-family: "Marck";

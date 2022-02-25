@@ -13,31 +13,43 @@
 <body onload="getWeatherAndSale()">
     <div class="weatherWidget">
         <div class="row">
-          <div class="weatherForm col-4">
-              <form>
-                  <label class="form-label" for="days">Kérem válassza ki a látogatás napját:</label>
-                  <select class="form-control daySelect" name="days" id="days">
-                      <option value="monday" checked>Hétfő</option>
-                      <option value="tuesday">Kedd</option>
-                      <option value="wednesday">Szerda</option>
-                      <option value="thursday">Csütörtök</option>
-                      <option value="friday">Péntek</option>
-                      <option value="saturday">Szombat</option>
-                      <option value="sunday">Vasárnap</option>
-                  </select>
-                  <div class="weatherButtonDiv">
-                      <button onclick="getWeatherAndSale()" type="button" class="btn btn-warning weatherButton">Mutat</button>
-                  </div>
-              </form>
-          </div>
-          <div class="weatherFormSale col-6">
-              <label class="form-label"><span class="weatherSale"></span></label>
-          </div>
-          <div class="weatherFormDayWeaher col-2">
-              <label class="form-label"><span class="weather"></span> °C</label>
-          </div>
-      </div>
-  </div>
+            <div class="weatherForm col-4">
+                <form>
+                    <label class="form-label" for="days">Kérem válassza ki a látogatás napját:</label>
+                    <select class="form-control daySelect" name="days" id="days">
+                        <option value="monday" checked>Hétfő</option>
+                        <option value="tuesday">Kedd</option>
+                        <option value="wednesday">Szerda</option>
+                        <option value="thursday">Csütörtök</option>
+                        <option value="friday">Péntek</option>
+                        <option value="saturday">Szombat</option>
+                        <option value="sunday">Vasárnap</option>
+                    </select>
+                    <div class="weatherButtonDiv">
+                        <button onclick="getWeatherAndSale()" type="button"
+                            class="btn btn-warning weatherButton">Mutat</button>
+                    </div>
+                </form>
+            </div>
+            <div class="weatherFormSale col-6">
+                <span class="weatherSale"></span>
+            </div>
+            <div class="weatherFormDayWeaher col-2">
+                <label class="form-label"><span class="weather"></span> °C</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <label class="form-label">A heti legalacsonyabb hőmérséklet: <span class="temperatureMin"></span> </label>
+            </div>
+            <div class="col-4">
+                <label class="form-label">A heti legalmagasabb hőmérséklet: <span class="temperatureMax"></span> </label>
+            </div>
+            <div class="col-4">
+                <label class="form-label">A heti hőmérséklet átlaga: <span class="temperatureAverage"></span> </label>
+            </div>
+        </div>
+    </div>
     <table class="topMenuTable">
         <tr>
             <td class="topMenuTd"><a class="topMenu" href="contact.html">Elérhetőség</a></td>
@@ -50,57 +62,58 @@
         <h1>Elérhetőségünk</h1>
     </div>
     <div class="contactContent">
-    <h2>Címünk</h2>
-    1117 Budapest, Budafoki út 56.
-    <h2>Telefonszámunk</h2>
-    (1) 880-0048
-    <h2>Nyitvatartás</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Napok</th>
-                <th>Nyitás</th>
-                <th>Zárás</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hétfő</td>
-                <td rowspan="4">10:00</td>
-                <td rowspan="4">20:00</td>
-            </tr>
-            <tr>
-                <td>Kedd</td>
-            </tr>
-            <tr>
-                <td>Szerda</td>
-            </tr>
-            <tr>
-                <td>Csütörtök</td>
-            </tr>
-            <tr>
-                <td>Péntek</td>
-                <td rowspan="4">10:00</td>
-                <td rowspan="4">22:00</td>
-            </tr>
-            <tr>
-                <td>Szombat</td>
-            </tr>
-            <tr>
-                <td>Vasárnap</td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
-    <h2>Megközelítés</h2>
-    <b>Autóval</b> a Hengermalom utcában lehet parkolni. <br>
-    <b>Tömegközlekedéssel</b> a 103 busz Hengermalom úti végállomásánál, illetve a 33, 133E buszokkal a Hengermalom út
-    megállónál kell leszállni. <br> <br>
-    <a class="contactImg" target="blank"
-        href="https://www.google.com/maps/place/Budapest,+Budafoki+%C3%BAt+56,+1117/@47.4615374,19.0508339,17z/data=!4m5!3m4!1s0x4741dda0ecec79c5:0xc69f708c9d234c8!8m2!3d47.4615374!4d19.0530226"><img
-            src="img/map.png" alt="térkép"></a>
-        </div>
-        <script src="/js/main.js"></script>
-        </body>
+        <h2>Címünk</h2>
+        1117 Budapest, Budafoki út 56.
+        <h2>Telefonszámunk</h2>
+        (1) 880-0048
+        <h2>Nyitvatartás</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Napok</th>
+                    <th>Nyitás</th>
+                    <th>Zárás</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hétfő</td>
+                    <td rowspan="4">10:00</td>
+                    <td rowspan="4">20:00</td>
+                </tr>
+                <tr>
+                    <td>Kedd</td>
+                </tr>
+                <tr>
+                    <td>Szerda</td>
+                </tr>
+                <tr>
+                    <td>Csütörtök</td>
+                </tr>
+                <tr>
+                    <td>Péntek</td>
+                    <td rowspan="4">10:00</td>
+                    <td rowspan="4">22:00</td>
+                </tr>
+                <tr>
+                    <td>Szombat</td>
+                </tr>
+                <tr>
+                    <td>Vasárnap</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+        <h2>Megközelítés</h2>
+        <b>Autóval</b> a Hengermalom utcában lehet parkolni. <br>
+        <b>Tömegközlekedéssel</b> a 103 busz Hengermalom úti végállomásánál, illetve a 33, 133E buszokkal a Hengermalom
+        út
+        megállónál kell leszállni. <br> <br>
+        <a class="contactImg" target="blank"
+            href="https://www.google.com/maps/place/Budapest,+Budafoki+%C3%BAt+56,+1117/@47.4615374,19.0508339,17z/data=!4m5!3m4!1s0x4741dda0ecec79c5:0xc69f708c9d234c8!8m2!3d47.4615374!4d19.0530226"><img
+                src="img/map.png" alt="térkép"></a>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
 
 </html>
