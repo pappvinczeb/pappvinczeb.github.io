@@ -10,8 +10,34 @@
     <title>Rendelés</title>
 </head>
 
-<body>
-
+<body onload="getWeatherAndSale()">
+    <div class="weatherWidget">
+          <div class="row">
+            <div class="weatherForm col-4">
+                <form>
+                    <label class="form-label" for="days">Kérem válassza ki a látogatás napját:</label>
+                    <select class="form-control daySelect" name="days" id="days">
+                        <option value="monday">Hétfő</option>
+                        <option value="tuesday">Kedd</option>
+                        <option value="wednesday">Szerda</option>
+                        <option value="thursday">Csütörtök</option>
+                        <option value="friday">Péntek</option>
+                        <option value="saturday">Szombat</option>
+                        <option value="sunday">Vasárnap</option>
+                    </select>
+                    <div class="weatherButtonDiv">
+                        <button onclick="getWeatherAndSale()" type="button" class="btn btn-warning weatherButton">Mutat</button>
+                    </div>
+                </form>
+            </div>
+            <div class="weatherFormSale col-6">
+                <label class="form-label"><span class="weatherSale"></span></label>
+            </div>
+            <div class="weatherFormDayWeaher col-2">
+                <label class="form-label"><span class="weather"></span> °C</label>
+            </div>
+        </div>
+    </div>
     <table class="topMenuTable">
         <tr>
             <td class="topMenuTd"><a class="topMenu" href="contact.html">Elérhetőség</a></td>
@@ -86,19 +112,22 @@
                         </select>
                     </div>
                     <div>
-                        <label class="form-label productTitle" for="quantity">Menniység (minimum 1, maximum 10 darab):</label>
-                        <input class="form-control quantity" type="number" name="quantity" id="quantity" min="1" max="10">
+                        <label class="form-label productTitle" for="quantity">Menniység (minimum 1, maximum 10
+                            darab):</label>
+                        <input class="form-control quantity" type="number" name="quantity" id="quantity" min="1"
+                            max="10">
                     </div>
                 </fieldset>
             </form>
             <div class="orderPrice">
                 Végösszeg: <span class="showAmount">0</span> Ft
             </div>
+            <div class="orderComment">
+                A házhozszállítás 500Ft, de 5000Ft feletti vásárlás esetén ignyenes!
+            </div>
             <div class="orderButton">
-
                 <button onclick="showSumPrice()" type="button" class="btn btn-success">Rendelés leadása</button>
             </div>
-
         </div>
         <script src="/js/main.js"></script>
         <div class="col-2">

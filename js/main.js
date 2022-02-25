@@ -1,3 +1,4 @@
+//Form
 //Validálja a megadott mennyiséget és kiszámolja a rendelés a végső árát
 function calcAmount(pricePerProduct, quantityNum) {
     let sauceInput = document.querySelector("select[name='sauce']");
@@ -78,4 +79,38 @@ function showSumPrice() {
     calcAmount(price, quantityNum)
     showAmount.innerHTML = amount;
 
+}
+
+
+//Időjárás panel
+
+let dayWeather;
+let weatherSale;
+let weatherMatrix = [["monday", 0], ["tuesday", 15], ["wednesday", 14], ["thursday", 20], ["friday", 38], ["saturday", 45], ["sunday", 52]];
+let saleMatrix = [[0, "Ma forró csokit is árusítunk!"],[15, "Melegedj át egy teával nálunk!"],[20, "Ma finom sütivel várunk!"],[25, "Ma fagyit is kínálunk!"],[50, "Hűsítsd le magad egy jéghideg limonádéval!"]];
+
+function getDayWeather(){
+    let selectedDay = document.querySelector("select[name='days']");
+    let showWeather = document.querySelector("span.weather");
+
+    weatherMatrix.forEach(element => {
+        dayWeather = element[0] == selectedDay.value ? element[1] : dayWeather;
+    showWeather.innerHTML = dayWeather; 
+    });
+
+
+}
+
+function getWeatherSale (){
+    let showSale = document.querySelector("span.weatherSale");
+
+    saleMatrix.forEach(element => {
+        weatherSale= element[0]<=dayWeather ? element[1] : weatherSale;
+    showSale.innerHTML = weatherSale; 
+    })
+}
+
+function getWeatherAndSale(){
+    getDayWeather()
+    getWeatherSale ()
 }
