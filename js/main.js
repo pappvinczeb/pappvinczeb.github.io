@@ -144,8 +144,13 @@ function getAverageTemperature(){
     for(let i=0; i < weatherMatrix.length; i++){
         sum += parseInt(weatherMatrix[i].slice(1,2));
     }
+
+    for(let i=0; i < weatherMatrix.length; i++){
+        piece ++;
+    }
     average=sum/(piece-1)
-    showAverageTemp.innerHTML = average
+    showAverageTemp.innerHTML = parseInt(average)
+
 }
 
 
