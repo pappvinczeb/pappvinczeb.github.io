@@ -262,6 +262,7 @@ h2 {
     max-height: 10%;
     padding: 1.5%;
     min-width: 99%;
+    display: block;
 
 }
 
